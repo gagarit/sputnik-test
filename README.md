@@ -7,6 +7,12 @@ test-task for Sputnik:
 - PostgreSQL 12
 - Docker version 24.0.2
 
+#### Для запуска:
+1. Cкачать проект
+2. Перейти в папку project
+3. Создать файл .env по образцу env.example
+4. Запустить командой docker-compose up
+
 
 ## API Reference
 
