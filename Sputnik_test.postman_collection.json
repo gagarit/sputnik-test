@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "d40add60-77d4-45d6-9284-182757b124c3",
+		"name": "Sputnik_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26942179"
+	},
+	"item": [
+		{
+			"name": "users list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://0.0.0.0:8000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "places list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://0.0.0.0:8000/places"
+			},
+			"response": []
+		},
+		{
+			"name": "wishlist/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://0.0.0.0:8000/wishlist/2"
+			},
+			"response": []
+		},
+		{
+			"name": "user create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"login\": \"sh\",\n        \"password\": \"36sdарf5\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://0.0.0.0:8000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "place create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"placename\": \"omsk\",\n    \"longitude\": 366,\n    \"latitude\": 457\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://0.0.0.0:8000/places"
+			},
+			"response": []
+		},
+		{
+			"name": "wishlist add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 2,\n    \"place_id\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://0.0.0.0:8000/wishlist/add"
+			},
+			"response": []
+		}
+	]
+}
